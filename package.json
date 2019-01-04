@@ -32,12 +32,12 @@
     "node": ">=8.0"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.3.0",
-    "@nuxtjs/component-cache": "^1.1.1",
-    "@nuxtjs/pwa": "2.0.8",
+    "@nuxtjs/axios": "latest",
+    "@nuxtjs/component-cache": "latest",
+    "@nuxtjs/pwa": "latest",
     "apicache": "^1.2.1",
     "express": "^4.16.3",
-    "nuxt-edge": "^2.0.0-25375479.ba18127"
+    "nuxt": "latest"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.2",
