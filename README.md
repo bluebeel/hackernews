@@ -52,6 +52,28 @@ npm run lintfix
 
 ```
 
+## Deployment on Now
+```json
+{
+    "version": 2,
+    "name": "nuxt-news",
+    "public": true,
+    "builds": [
+        { "src": "nuxt.config.js", "use": "@bluebeel/nuxt" }
+    ],
+    "routes": [
+        { "src": "^/(.+)\\.(.+)$", "dest": "/$1.$2" },
+        { "src": "^/item/([\\d/]+)$", "dest": "/item/_id" },
+        { "src": "^/user/([^/]+)$", "dest": "/user/_id" },
+        { "src": "^/([^/]+)(/([\\d/]+))?$", "dest": "/_feed/_page" }
+	]
+}
+```
+The defined routes allow to manage the dynamic routes of the application Nuxt.js Hacker News.
+
+
+
+
 ## License
 
 MIT
